@@ -9,7 +9,7 @@ interface FixationCrossProps {
 
 export default function FixationCross({ nextPage, duration = 180000 }: FixationCrossProps) {
   const router = useRouter();
-  const [timeLeft, setTimeLeft] = useState<number>(duration);
+  const [ , setTimeLeft] = useState<number>(duration);
 
   useEffect(() => {
     const timer = setTimeout(() => {

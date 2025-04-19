@@ -20,7 +20,6 @@ interface ExperimentProviderProps {
 }
 
 export const ExperimentProvider = ({ children }: ExperimentProviderProps) => {
-  const router = useRouter();
   const [username, setUsername] = useState<string>('');
   const [condition, setCondition] = useState<string>('');
   const [answers1, setAnswers1] = useState<Answers>({});
